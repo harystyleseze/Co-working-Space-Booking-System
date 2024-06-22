@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Co-working Space Booking System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Co-working Space Booking System</h1>
+    </header>
+    <main>
+      <section id="booking-section">
+        <h2>Book a Space</h2>
+        <div class="desk-type">
+          <button id="book-individual">Book Individual Desk</button>
+          <button id="book-team">Book Team Desk</button>
+        </div>
+        <div id="desk-selection" class="hidden">
+          <div id="individual-desks" class="hidden">
+            <h3>Individual Desks</h3>
+            <div class="desks"></div>
+          </div>
+          <div id="team-desks" class="hidden">
+            <h3>Team Desks</h3>
+            <div class="desks"></div>
+          </div>
+          <form id="booking-form" class="hidden">
+            <label for="desk-id">Desk ID:</label>
+            <input type="text" id="desk-id" readonly />
+            <label for="start-time">Start Time:</label>
+            <input type="time" id="start-time" required />
+            <label for="end-time">End Time:</label>
+            <input type="time" id="end-time" required />
+            <label for="membership-tier">Membership Tier:</label>
+            <select id="membership-tier" required>
+              <option value="basic">Basic</option>
+              <option value="premium">Premium</option>
+              <option value="executive">Executive</option>
+            </select>
+            <button type="submit">Confirm Booking</button>
+          </form>
+        </div>
+      </section>
+      <section id="dashboard-section">
+        <h2>Dashboard</h2>
+        <div id="booked-desks"></div>
+        <div id="revenue-report"></div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2024 Co-working Space Booking System</p>
+    </footer>
+  </body>
+</html>
