@@ -26,7 +26,7 @@ This is a co-working space booking system that allows users to book individual o
 
 ## Installation
 
-No installation is required. Simply open the `index.html` file in a web browser to use the system. Or click the link
+No installation is required. Simply open the `index.html` file in a web browser to use the system. Or click this [link](https://harystyleseze.github.io/Co-working-Space-Booking-System/) to run the app.
 
 ## Files
 
